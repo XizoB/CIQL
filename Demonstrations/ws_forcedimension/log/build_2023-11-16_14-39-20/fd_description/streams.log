@@ -1,0 +1,52 @@
+[0.245s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description
+[2.851s] -- The C compiler identification is GNU 9.4.0
+[3.139s] -- The CXX compiler identification is GNU 9.4.0
+[3.154s] -- Check for working C compiler: /usr/bin/cc
+[3.402s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.405s] -- Detecting C compiler ABI info
+[3.635s] -- Detecting C compiler ABI info - done
+[3.668s] -- Detecting C compile features
+[3.669s] -- Detecting C compile features - done
+[3.710s] -- Check for working CXX compiler: /usr/bin/c++
+[3.968s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.972s] -- Detecting CXX compiler ABI info
+[4.226s] -- Detecting CXX compiler ABI info - done
+[4.262s] -- Detecting CXX compile features
+[4.263s] -- Detecting CXX compile features - done
+[4.268s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[4.402s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.402s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.593s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.689s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[5.108s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.115s] -- Added test 'lint_cmake' to check CMake code style
+[5.120s] -- Added test 'xmllint' to check XML markup files
+[5.127s] -- Configuring done
+[5.133s] -- Generating done
+[5.135s] -- Build files have been written to: /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description
+[5.144s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_description -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description
+[5.152s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description -- -j104 -l104
+[5.276s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description -- -j104 -l104
+[5.414s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description
+[5.436s] -- Install configuration: "Release"
+[5.437s] -- Execute custom install script
+[5.439s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/urdf/fd.urdf
+[5.467s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/ros2_control/fd.r2c_hardware.xacro
+[5.494s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/config/fd.config.xacro
+[5.520s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/config/fd_controllers.yaml
+[5.547s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/ament_index/resource_index/package_run_dependencies/fd_description
+[5.574s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/ament_index/resource_index/parent_prefix_path/fd_description
+[5.601s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/environment/ament_prefix_path.sh
+[5.628s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/environment/ament_prefix_path.dsv
+[5.654s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/environment/path.sh
+[5.681s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/environment/path.dsv
+[5.705s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/local_setup.bash
+[5.731s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/local_setup.sh
+[5.757s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/local_setup.zsh
+[5.784s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/local_setup.dsv
+[5.810s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/package.dsv
+[5.837s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/ament_index/resource_index/packages/fd_description
+[5.864s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/cmake/fd_descriptionConfig.cmake
+[5.890s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/cmake/fd_descriptionConfig-version.cmake
+[5.917s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_description/share/fd_description/package.xml
+[5.955s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_description

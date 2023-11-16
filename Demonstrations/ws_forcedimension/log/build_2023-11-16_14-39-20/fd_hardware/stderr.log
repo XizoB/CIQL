@@ -1,0 +1,82 @@
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:32[m[K:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn fd_hardware::FDEffortHardwareInterface::on_init(const hardware_interface::HardwareInfo&)[m[K’:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:59:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   59 |         [01;35m[K"Joint '%s' has %d command interfaces found. 1 expected."[m[K, joint.name.c_str(),
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   60 |         [32m[Kjoint.command_interfaces.size()[m[K);
+      |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                      [32m[K|[m[K
+      |                                      [32m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type {aka long unsigned int}[m[K
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:59:26:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   59 |         "Joint '%s' has [01;36m[K%d[m[K command interfaces found. 1 expected.", joint.name.c_str(),
+      |                         [01;36m[K~^[m[K
+      |                          [01;36m[K|[m[K
+      |                          [01;36m[Kint[m[K
+      |                         [32m[K%ld[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:32[m[K:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:77:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+   77 |         [01;35m[K"Joint '%s' has %d state interface. 3 expected."[m[K, joint.name.c_str(),
+      |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+   78 |         [32m[Kjoint.state_interfaces.size()[m[K);
+      |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                    [32m[K|[m[K
+      |                                    [32m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type {aka long unsigned int}[m[K
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:77:26:[m[K [01;36m[Knote: [m[Kformat string is defined here
+   77 |         "Joint '%s' has [01;36m[K%d[m[K state interface. 3 expected.", joint.name.c_str(),
+      |                         [01;36m[K~^[m[K
+      |                          [01;36m[K|[m[K
+      |                          [01;36m[Kint[m[K
+      |                         [32m[K%ld[m[K
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn fd_hardware::FDEffortHardwareInterface::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:150:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  150 | allbackReturn FDEffortHardwareInterface::on_activate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+      |                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn fd_hardware::FDEffortHardwareInterface::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:166:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  166 | lbackReturn FDEffortHardwareInterface::on_deactivate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+      |                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:32[m[K:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kbool fd_hardware::FDEffortHardwareInterface::connectToDevice()[m[K’:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:276:71:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K-Wformat=[m[K]
+  276 |           RCLCPP_INFO(rclcpp::get_logger("FDEffortHardwareInterface"),[01;35m[K"dhd : Effector Mass = %sg"[m[K,[32m[Kstd::to_string(effector_mass*1000.0)[m[K);
+      |                                                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                                                 [32m[K|[m[K
+      |                                                                                                                 [32m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:276:95:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  276 | LCPP_INFO(rclcpp::get_logger("FDEffortHardwareInterface"),"dhd : Effector Mass = [01;36m[K%s[m[Kg",std::to_string(effector_mass*1000.0));
+      |                                                                                  [01;36m[K~^[m[K
+      |                                                                                   [01;36m[K|[m[K
+      |                                                                                   [01;36m[Kchar*[m[K
+

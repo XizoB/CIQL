@@ -1,0 +1,4 @@
+source;share/ee_pose_broadcaster/local_setup.bash
+source;share/ee_pose_broadcaster/local_setup.dsv
+source;share/ee_pose_broadcaster/local_setup.sh
+source;share/ee_pose_broadcaster/local_setup.zsh

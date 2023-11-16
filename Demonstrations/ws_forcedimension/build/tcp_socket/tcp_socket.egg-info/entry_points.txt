@@ -1,0 +1,3 @@
+[console_scripts]
+ee_topic_sub = tcp_socket.ee_topic_sub:main
+

@@ -1,0 +1,69 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found hardware_interface: 1.5.1 (/opt/ros/galactic/share/hardware_interface/cmake)
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found ament_cmake_gtest: 1.1.5 (/opt/ros/galactic/share/ament_cmake_gtest/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware
+[35m[1mScanning dependencies of target fd_hardware[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/fd_hardware.dir/src/fd_effort_hi.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libfd_hardware.so[0m
+[100%] Built target fd_hardware
+-- Install configuration: "Release"
+-- Execute custom install script
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware//fd_hardware_plugin.xml
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/lib/libfd_hardware.so
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/include/fd_hardware/fd_effort_hi.hpp
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/include/fd_hardware/visibility_control.h
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/library_path.sh
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/library_path.dsv
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/package_run_dependencies/fd_hardware
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/parent_prefix_path/fd_hardware
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/ament_prefix_path.sh
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/ament_prefix_path.dsv
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/path.sh
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/path.dsv
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.bash
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.sh
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.zsh
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.dsv
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/package.dsv
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/packages/fd_hardware
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/fd_hardware
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/fd_hardwareConfig.cmake
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/fd_hardwareConfig-version.cmake
+-- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/package.xml

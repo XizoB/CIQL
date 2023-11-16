@@ -1,0 +1,4 @@
+source;share/fd_description/local_setup.bash
+source;share/fd_description/local_setup.dsv
+source;share/fd_description/local_setup.sh
+source;share/fd_description/local_setup.zsh

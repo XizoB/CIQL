@@ -1,0 +1,90 @@
+exp_name: ''  # 本次实验的名字与其他实验的区别，例如随机种子啥的
+project_name: ${env.name}
+
+
+#------- 置信度参数 -------#
+C_aware:
+  conf_learn: "IQ"                # IQ/conf_expert/mean_lamb(ic-gail_mean)/max_lamb(ic-gail_max)/sail(selected ail)
+  sail_update: "hard"             # 置信度的更新是软更新还是硬更新
+  lr_Qvalue: 0.
+  lr_conf: 0.
+  traj_batch_size: 0
+  label_ratio: 0.
+  sparse_sample: False            # 标签轨迹间隔采样
+  pretrain_steps: 0
+  detached_requires_grad: True
+  Qvalue: False
+  lamb: 1.0
+  exp_n: 3
+
+
+#------- 实验基本参数 -------#
+cuda_deterministic: False
+device: None                      # to be specified later
+
+gamma: 0.99
+seed: 0
+pretrain: null                    # 是否需要导入预训练模型,路径
+trexeval: null                    # 是否需要导入预trex模型,路径
+
+num_seed_steps: 0                 # 训练前随机探索 Don't need seeding for IL (Use 1000 for RL)
+only_expert_states: False
+
+
+#------- 环境 Env 参数 -------#
+env:
+  replay_mem: 50000
+  initial_mem: 1280
+  horizon: 1000                   # eps_steps/horizon 即智能体与环境交互的最长步骤
+  # eps_window: 100
+
+  # dmc控制 use pixels
+  from_pixels: False
+
+
+#------- 演示数据参数 -------#
+expert:
+  demos: 1
+  subsample_freq: 1
+  choice_trajs: False             # 是否随机间隔抽取专家示教数据
+  subopt_class_num: 1             # 当随机间隔抽取专家数据时，其为抽取种类数目，当选择专家数据时，其为抽取种类类别
+
+
+#------- 训练参数 -------#
+train:
+  batch: 32                       # 智能体训练的batch_size
+
+  learn_steps: 1e6
+  eval_interval: 5e3
+  initial_step: 2e4               # SAIL 中更新置信度的步数
+  roullout_length : 1             # 每一次更新需要与环境交互采集的transition的数目
+  train_steps: 1                  # 每一次更新循环中，价值与策略网络的数目
+
+
+
+#------- 评估参数 -------#
+eval:
+  policy:                         # 测试训练好的策略的文件所在位置
+  eps: 10                         # 每一次评估循环中的评估次数
+  transfer: False
+  threshold:                      # 专家智能体生成轨迹的 Horizon 门槛
+
+#------- 日志参数 -------#
+log_interval: 100                 # Log every this many steps
+log_dir: logs/
+hydra_base_dir: ""
+
+
+#------- 算法参数 -------#
+method:
+  type: iq
+
+offline: False                    # 离线学习
+online: False                     # 在线学习
+
+
+#------- 默认参数 -------#
+defaults:
+  - method: iq
+  - agent: softq
+  - env: cartpole

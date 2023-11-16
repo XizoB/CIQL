@@ -1,0 +1,51 @@
+# @package _global_
+
+env:
+  name: Ant-v2
+  demo: Ant-v2_25.pkl
+
+  replay_mem: 1000000
+  initial_mem: 10000
+
+  horizon: 1000  # eps_steps/horizon 即智能体与环境交互的最长步骤
+  eps_window: 10
+  learn_steps: 1e6
+  eval_interval: 5e3
+  roullout_length : 1  # 每一次更新需要与环境交互采集的transition的数目
+  train_steps: 1  # 每一次更新循环中，价值与策略网络的数目
+
+
+expert:
+  demos: 1
+  subsample_freq: 1
+
+eval:
+  policy: 
+  eps: 10
+  threshold: 4500
+
+
+agent:
+  name: sac
+  init_temp: 1 # use a low temp for IL, 初始化自动调节正则化参数alpha
+
+  actor_lr: 0.001
+  actor_update_frequency: 1  # 策略网络更新频率
+
+  critic_lr: 0.001
+  critic_target_update_frequency: 1  # 目标价值网络更新频率
+
+  # learn temperature coefficient (disabled by default) 学习温度系数
+  learn_temp: True
+
+num_seed_steps: 0 # Don't need seeding for IL (Use 1000 for RL)
+log_interval: 500  # Log every this many steps
+num_actor_updates: 1
+
+train:
+  use_target: true
+  soft_update: true
+  batch: 256
+
+q_net:
+  _target_: agent.sac_models.SingleQCritic

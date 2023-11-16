@@ -1,0 +1,9 @@
+# @package _global_
+
+method:
+  type: rl
+
+  constrain: False
+  grad_pen: False
+  tanh: False
+

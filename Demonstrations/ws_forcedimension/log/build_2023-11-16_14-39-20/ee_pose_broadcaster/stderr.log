@@ -1,0 +1,8 @@
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster/src/ee_pose_broadcaster.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type ee_pose_broadcaster::EePoseBroadcaster::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster/src/ee_pose_broadcaster.cpp:172:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  172 | controller_interface::return_type EePoseBroadcaster::update([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+      |                                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster/src/ee_pose_broadcaster.cpp:172:113:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  172 | ype EePoseBroadcaster::update(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K)
+      |                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+

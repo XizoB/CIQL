@@ -1,0 +1,1 @@
+/root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster/ament_cmake_environment_hooks/local_setup.sh

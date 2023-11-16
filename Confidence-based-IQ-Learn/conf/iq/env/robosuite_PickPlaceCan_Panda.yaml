@@ -1,0 +1,78 @@
+# @package _global_
+
+
+#------- 环境 Env 参数 -------#
+env:
+  name: robosuite_PickPlaceCan_Panda
+  demo:                                   # IL 模仿学习
+
+  env_name: PickPlaceCan                  # 任务
+  robots: Panda                           # 机器人型号
+  env_configuration: default
+  controller_configs: OSC_POSE            # 机械臂控制器参数
+  gripper_types: default                  # 夹爪类型
+  initialization_noise: default
+  use_object_obs: True                    # 目标物信息
+  use_camera_obs: False                   # 相机信息 需要 has_offscreen_renderer
+  reward_scale: 1.0
+  reward_shaping: True                    # 使用奖励工程, 细化奖励密度
+  has_renderer: False                     # 训练可视化
+  has_offscreen_renderer: False           # 用于 Image 训练与 has_renderer 二选一
+  render_camera: "frontview"              # 训练可视化视角 默认 "frontview" 
+  render_collision_mesh: False
+  render_visual_mesh: True
+  render_gpu_device_id: -1
+  control_freq: 20                        # 20hz 输出控制指令
+  horizon: 400                            # 每一个轨迹的长度 Horizon
+  ignore_done: True                       # 当达到 horizon 长度时 done 不会变为1而为 0
+  hard_reset: False
+  camera_names: "agentview"               # 相机类型 默认 "agentview"
+  camera_heights: 84                      # image height
+  camera_widths: 84                       # image width
+  camera_depths: False                    # 
+
+  replay_mem: 1000000
+  initial_mem: 2000
+
+#------- 生成演示数据参数 -------#
+expert:
+  demos: 25
+
+#------- 训练参数 -------#
+train:
+  batch: 128
+
+  learn_steps: 1e6
+  eval_interval: 2500
+  roullout_length : 2500             # 每一次更新需要与环境交互采集的transition的数目
+  train_steps: 1000                  # 每一次更新循环中，价值与策略网络的数目
+
+
+#------- 评估参数 -------#
+eval:
+  policy:                               # 测试训练好的策略的文件所在位置
+  threshold: 20
+
+
+#------- 算法参数 -------#
+agent:
+  name: sac
+  init_temp: 0.001                          # use a low temp for IL, 初始化自动调节正则化参数alpha
+
+  actor_lr: 3e-5
+  actor_update_frequency: 1             # 策略网络更新频率
+  num_actor_updates: 1
+
+  critic_lr: 3e-5
+  critic_target_update_frequency: 1     # 目标价值网络更新频率
+
+  learn_temp: False                     # learn temperature coefficient 探索系数
+
+
+#------- 日志参数 -------#
+log_interval: 500                       # Log every this many steps
+
+
+
+q_net:
+  _target_: agent.sac_models.SingleQCritic

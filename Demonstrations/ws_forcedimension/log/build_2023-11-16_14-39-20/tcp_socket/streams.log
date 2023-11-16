@@ -1,0 +1,25 @@
+[2.827s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/tcp_socket': PYTHONPATH=/root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket --editable --build-directory /root/RoboLearn/Demonstrations/ws_forcedimension/build/tcp_socket/build --no-deps install_data --install-dir /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket
+[3.219s] running develop
+[3.980s] running egg_info
+[3.981s] creating tcp_socket.egg-info
+[3.981s] writing tcp_socket.egg-info/PKG-INFO
+[3.981s] writing dependency_links to tcp_socket.egg-info/dependency_links.txt
+[3.981s] writing entry points to tcp_socket.egg-info/entry_points.txt
+[3.982s] writing requirements to tcp_socket.egg-info/requires.txt
+[3.982s] writing top-level names to tcp_socket.egg-info/top_level.txt
+[3.983s] writing manifest file 'tcp_socket.egg-info/SOURCES.txt'
+[4.033s] reading manifest file 'tcp_socket.egg-info/SOURCES.txt'
+[4.033s] writing manifest file 'tcp_socket.egg-info/SOURCES.txt'
+[4.085s] running build_ext
+[4.086s] Creating /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/lib/python3.8/site-packages/site.py
+[4.089s] Creating /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/lib/python3.8/site-packages/tcp-socket.egg-link (link to .)
+[4.090s] Installing ee_topic_sub script to /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/lib/tcp_socket
+[4.090s] 
+[4.090s] Installed /root/RoboLearn/Demonstrations/ws_forcedimension/build/tcp_socket
+[4.091s] running install_data
+[4.091s] creating /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/share/ament_index
+[4.091s] creating /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/share/ament_index/resource_index
+[4.091s] creating /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/share/ament_index/resource_index/packages
+[4.092s] copying resource/tcp_socket -> /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/share/ament_index/resource_index/packages
+[4.092s] copying package.xml -> /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/share/tcp_socket
+[4.138s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/tcp_socket' returned '0': PYTHONPATH=/root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --prefix /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket --editable --build-directory /root/RoboLearn/Demonstrations/ws_forcedimension/build/tcp_socket/build --no-deps install_data --install-dir /root/RoboLearn/Demonstrations/ws_forcedimension/install/tcp_socket

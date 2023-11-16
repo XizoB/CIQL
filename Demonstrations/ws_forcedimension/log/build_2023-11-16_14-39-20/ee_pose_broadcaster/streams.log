@@ -1,0 +1,85 @@
+[0.812s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster
+[2.824s] -- The C compiler identification is GNU 9.4.0
+[3.112s] -- The CXX compiler identification is GNU 9.4.0
+[3.126s] -- Check for working C compiler: /usr/bin/cc
+[3.375s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.377s] -- Detecting C compiler ABI info
+[3.607s] -- Detecting C compiler ABI info - done
+[3.642s] -- Detecting C compile features
+[3.643s] -- Detecting C compile features - done
+[3.683s] -- Check for working CXX compiler: /usr/bin/c++
+[3.936s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.939s] -- Detecting CXX compiler ABI info
+[4.197s] -- Detecting CXX compiler ABI info - done
+[4.233s] -- Detecting CXX compile features
+[4.234s] -- Detecting CXX compile features - done
+[4.239s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[4.374s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.375s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.566s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.662s] -- Found controller_interface: 1.5.1 (/opt/ros/galactic/share/controller_interface/cmake)
+[4.745s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[4.760s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[4.837s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[6.377s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[6.381s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[6.413s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[6.415s] -- Looking for pthread.h
+[6.650s] -- Looking for pthread.h - found
+[6.651s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.896s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.897s] -- Looking for pthread_create in pthreads
+[7.105s] -- Looking for pthread_create in pthreads - not found
+[7.106s] -- Looking for pthread_create in pthread
+[7.340s] -- Looking for pthread_create in pthread - found
+[7.343s] -- Found Threads: TRUE  
+[8.006s] -- Found realtime_tools: 2.2.0 (/opt/ros/galactic/share/realtime_tools/cmake)
+[8.282s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[8.372s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[8.624s] -- Configuring done
+[9.810s] -- Generating done
+[9.815s] -- Build files have been written to: /root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster
+[9.830s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster
+[9.837s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster -- -j104 -l104
+[9.972s] [35m[1mScanning dependencies of target ee_pose_broadcaster[0m
+[12.775s] [ 50%] [32mBuilding CXX object CMakeFiles/ee_pose_broadcaster.dir/src/ee_pose_broadcaster.cpp.o[0m
+[19.596s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster/src/ee_pose_broadcaster.cpp:[m[K In member function ‘[01m[Kvirtual controller_interface::return_type ee_pose_broadcaster::EePoseBroadcaster::update(const rclcpp::Time&, const rclcpp::Duration&)[m[K’:
+[19.596s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster/src/ee_pose_broadcaster.cpp:172:82:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktime[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[19.596s]   172 | controller_interface::return_type EePoseBroadcaster::update([01;35m[Kconst rclcpp::Time & time[m[K, const rclcpp::Duration & period)
+[19.597s]       |                                                             [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~[m[K
+[19.597s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_controllers/ee_pose_broadcaster/src/ee_pose_broadcaster.cpp:172:113:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kperiod[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[19.597s]   172 | ype EePoseBroadcaster::update(const rclcpp::Time & time, [01;35m[Kconst rclcpp::Duration & period[m[K)
+[19.597s]       |                                                          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~[m[K
+[19.597s] 
+[23.636s] [100%] [32m[1mLinking CXX shared library libee_pose_broadcaster.so[0m
+[24.086s] [100%] Built target ee_pose_broadcaster
+[24.117s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster -- -j104 -l104
+[24.249s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster
+[24.273s] -- Install configuration: "Release"
+[24.274s] -- Execute custom install script
+[24.275s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster//ee_pose_plugin.xml
+[24.304s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/include/ee_pose_broadcaster/ee_pose_broadcaster.hpp
+[24.330s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/include/ee_pose_broadcaster/visibility_control.h
+[24.359s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/lib/libee_pose_broadcaster.so
+[24.385s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/environment/library_path.sh
+[24.410s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/environment/library_path.dsv
+[24.436s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ament_index/resource_index/package_run_dependencies/ee_pose_broadcaster
+[24.461s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ament_index/resource_index/parent_prefix_path/ee_pose_broadcaster
+[24.489s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/environment/ament_prefix_path.sh
+[24.516s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/environment/ament_prefix_path.dsv
+[24.543s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/environment/path.sh
+[24.572s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/environment/path.dsv
+[24.598s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/local_setup.bash
+[24.621s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/local_setup.sh
+[24.647s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/local_setup.zsh
+[24.674s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/local_setup.dsv
+[24.702s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/package.dsv
+[24.729s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ament_index/resource_index/packages/ee_pose_broadcaster
+[24.756s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ament_index/resource_index/controller_interface__pluginlib__plugin/ee_pose_broadcaster
+[24.781s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/cmake/ament_cmake_export_dependencies-extras.cmake
+[24.808s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/cmake/ament_cmake_export_include_directories-extras.cmake
+[24.835s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/cmake/ament_cmake_export_libraries-extras.cmake
+[24.861s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/cmake/ee_pose_broadcasterConfig.cmake
+[24.885s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/cmake/ee_pose_broadcasterConfig-version.cmake
+[24.906s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/ee_pose_broadcaster/share/ee_pose_broadcaster/package.xml
+[24.936s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /root/RoboLearn/Demonstrations/ws_forcedimension/build/ee_pose_broadcaster

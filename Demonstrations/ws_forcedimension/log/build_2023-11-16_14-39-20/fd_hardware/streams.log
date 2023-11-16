@@ -1,0 +1,157 @@
+[0.293s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware
+[2.831s] -- The C compiler identification is GNU 9.4.0
+[3.119s] -- The CXX compiler identification is GNU 9.4.0
+[3.134s] -- Check for working C compiler: /usr/bin/cc
+[3.379s] -- Check for working C compiler: /usr/bin/cc -- works
+[3.382s] -- Detecting C compiler ABI info
+[3.607s] -- Detecting C compiler ABI info - done
+[3.641s] -- Detecting C compile features
+[3.642s] -- Detecting C compile features - done
+[3.689s] -- Check for working CXX compiler: /usr/bin/c++
+[3.950s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.953s] -- Detecting CXX compiler ABI info
+[4.205s] -- Detecting CXX compiler ABI info - done
+[4.242s] -- Detecting CXX compile features
+[4.243s] -- Detecting CXX compile features - done
+[4.248s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[4.382s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[4.383s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[4.573s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.670s] -- Found hardware_interface: 1.5.1 (/opt/ros/galactic/share/hardware_interface/cmake)
+[4.739s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[4.750s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[4.844s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[6.386s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[6.391s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[6.423s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[6.424s] -- Looking for pthread.h
+[6.658s] -- Looking for pthread.h - found
+[6.658s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.906s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.907s] -- Looking for pthread_create in pthreads
+[7.113s] -- Looking for pthread_create in pthreads - not found
+[7.114s] -- Looking for pthread_create in pthread
+[7.348s] -- Looking for pthread_create in pthread - found
+[7.352s] -- Found Threads: TRUE  
+[7.729s] -- Found ament_cmake_gtest: 1.1.5 (/opt/ros/galactic/share/ament_cmake_gtest/cmake)
+[7.900s] -- Configuring done
+[9.387s] -- Generating done
+[9.391s] -- Build files have been written to: /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware
+[9.406s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware -DCMAKE_BUILD_TYPE=Release -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware
+[9.413s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware -- -j104 -l104
+[9.550s] [35m[1mScanning dependencies of target fd_hardware[0m
+[12.400s] [ 50%] [32mBuilding CXX object CMakeFiles/fd_hardware.dir/src/fd_effort_hi.cpp.o[0m
+[19.001s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[19.001s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[19.001s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[19.001s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[19.001s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[19.002s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[19.002s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[19.002s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[19.003s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[19.003s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[19.003s]                  from [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:32[m[K:
+[19.003s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn fd_hardware::FDEffortHardwareInterface::on_init(const hardware_interface::HardwareInfo&)[m[K’:
+[19.003s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:59:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+[19.003s]    59 |         [01;35m[K"Joint '%s' has %d command interfaces found. 1 expected."[m[K, joint.name.c_str(),
+[19.004s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.004s]    60 |         [32m[Kjoint.command_interfaces.size()[m[K);
+[19.004s]       |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.004s]       |                                      [32m[K|[m[K
+[19.004s]       |                                      [32m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type {aka long unsigned int}[m[K
+[19.005s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:59:26:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[19.005s]    59 |         "Joint '%s' has [01;36m[K%d[m[K command interfaces found. 1 expected.", joint.name.c_str(),
+[19.005s]       |                         [01;36m[K~^[m[K
+[19.005s]       |                          [01;36m[K|[m[K
+[19.005s]       |                          [01;36m[Kint[m[K
+[19.005s]       |                         [32m[K%ld[m[K
+[19.006s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[19.006s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[19.006s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[19.006s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[19.006s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[19.006s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[19.007s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[19.007s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[19.007s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[19.007s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[19.007s]                  from [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:32[m[K:
+[19.007s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:77:9:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%d[m[K’ expects argument of type ‘[01m[Kint[m[K’, but argument 6 has type ‘[01m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wformat=[m[K]
+[19.008s]    77 |         [01;35m[K"Joint '%s' has %d state interface. 3 expected."[m[K, joint.name.c_str(),
+[19.008s]       |         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.008s]    78 |         [32m[Kjoint.state_interfaces.size()[m[K);
+[19.008s]       |         [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.008s]       |                                    [32m[K|[m[K
+[19.008s]       |                                    [32m[Kstd::vector<hardware_interface::InterfaceInfo>::size_type {aka long unsigned int}[m[K
+[19.009s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:77:26:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[19.009s]    77 |         "Joint '%s' has [01;36m[K%d[m[K state interface. 3 expected.", joint.name.c_str(),
+[19.009s]       |                         [01;36m[K~^[m[K
+[19.009s]       |                          [01;36m[K|[m[K
+[19.009s]       |                          [01;36m[Kint[m[K
+[19.009s]       |                         [32m[K%ld[m[K
+[19.020s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn fd_hardware::FDEffortHardwareInterface::on_activate(const rclcpp_lifecycle::State&)[m[K’:
+[19.022s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:150:87:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[19.022s]   150 | allbackReturn FDEffortHardwareInterface::on_activate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[19.023s]       |                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[19.023s] 
+[19.023s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kvirtual CallbackReturn fd_hardware::FDEffortHardwareInterface::on_deactivate(const rclcpp_lifecycle::State&)[m[K’:
+[19.023s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:166:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kprevious_state[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[19.023s]   166 | lbackReturn FDEffortHardwareInterface::on_deactivate([01;35m[Kconst rclcpp_lifecycle::State & previous_state[m[K)
+[19.024s]       |                                                      [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[19.024s] 
+[19.028s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[19.028s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[19.029s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[19.029s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[19.029s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[19.029s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[19.029s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[19.029s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[19.030s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[19.030s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[19.030s]                  from [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:32[m[K:
+[19.030s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:[m[K In member function ‘[01m[Kbool fd_hardware::FDEffortHardwareInterface::connectToDevice()[m[K’:
+[19.030s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:276:71:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K-Wformat=[m[K]
+[19.030s]   276 |           RCLCPP_INFO(rclcpp::get_logger("FDEffortHardwareInterface"),[01;35m[K"dhd : Effector Mass = %sg"[m[K,[32m[Kstd::to_string(effector_mass*1000.0)[m[K);
+[19.031s]       |                                                                       [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K [32m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[19.031s]       |                                                                                                                 [32m[K|[m[K
+[19.031s]       |                                                                                                                 [32m[Kstd::string {aka std::__cxx11::basic_string<char>}[m[K
+[19.031s] [01m[K/root/RoboLearn/Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/src/fd_effort_hi.cpp:276:95:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[19.032s]   276 | LCPP_INFO(rclcpp::get_logger("FDEffortHardwareInterface"),"dhd : Effector Mass = [01;36m[K%s[m[Kg",std::to_string(effector_mass*1000.0));
+[19.032s]       |                                                                                  [01;36m[K~^[m[K
+[19.032s]       |                                                                                   [01;36m[K|[m[K
+[19.032s]       |                                                                                   [01;36m[Kchar*[m[K
+[19.032s] 
+[21.270s] [100%] [32m[1mLinking CXX shared library libfd_hardware.so[0m
+[22.925s] [100%] Built target fd_hardware
+[22.958s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware -- -j104 -l104
+[23.086s] Invoking command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware
+[23.110s] -- Install configuration: "Release"
+[23.111s] -- Execute custom install script
+[23.112s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware//fd_hardware_plugin.xml
+[23.139s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/lib/libfd_hardware.so
+[23.167s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/include/fd_hardware/fd_effort_hi.hpp
+[23.193s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/include/fd_hardware/visibility_control.h
+[23.219s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/library_path.sh
+[23.246s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/library_path.dsv
+[23.272s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/package_run_dependencies/fd_hardware
+[23.299s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/parent_prefix_path/fd_hardware
+[23.325s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/ament_prefix_path.sh
+[23.351s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/ament_prefix_path.dsv
+[23.378s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/path.sh
+[23.404s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/environment/path.dsv
+[23.430s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.bash
+[23.456s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.sh
+[23.482s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.zsh
+[23.507s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/local_setup.dsv
+[23.534s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/package.dsv
+[23.561s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/packages/fd_hardware
+[23.588s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/fd_hardware
+[23.612s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/ament_cmake_export_include_directories-extras.cmake
+[23.635s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/ament_cmake_export_libraries-extras.cmake
+[23.655s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/ament_cmake_export_dependencies-extras.cmake
+[23.683s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/fd_hardwareConfig.cmake
+[23.710s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/cmake/fd_hardwareConfig-version.cmake
+[23.737s] -- Symlinking: /root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_hardware/share/fd_hardware/package.xml
+[23.775s] Invoked command in '/root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /root/RoboLearn/Demonstrations/ws_forcedimension/build/fd_hardware

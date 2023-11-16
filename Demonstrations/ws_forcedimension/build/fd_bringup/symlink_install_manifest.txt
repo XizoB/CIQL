@@ -1,0 +1,16 @@
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/launch/fd.launch.py
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/ament_index/resource_index/package_run_dependencies/fd_bringup
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/ament_index/resource_index/parent_prefix_path/fd_bringup
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/environment/ament_prefix_path.sh
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/environment/ament_prefix_path.dsv
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/environment/path.sh
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/environment/path.dsv
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/local_setup.bash
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/local_setup.sh
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/local_setup.zsh
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/local_setup.dsv
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/package.dsv
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/ament_index/resource_index/packages/fd_bringup
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/cmake/fd_bringupConfig.cmake
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/cmake/fd_bringupConfig-version.cmake
+/root/RoboLearn/Demonstrations/ws_forcedimension/install/fd_bringup/share/fd_bringup/package.xml
