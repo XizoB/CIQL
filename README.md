@@ -1,7 +1,12 @@
 
 
 # Dependencies
-# Execute
+- ROS2(galactic)
+- robomimi-1.3
+- robosuite-offline
+- stable-baselines3
+
+# Run
 ## Collect demonstartions
 ### Activate Omgea.x device
 1. Compile by using  
@@ -18,13 +23,12 @@ Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/external/fd
 
 5. Publish end position data in another terminal
 `ros2 run tcp_socket ee_topic_sub`
-### Start a demonstration task
-`python collect_human_demonstrations.py --robots IIWA --environment Lift --device omega`  
-refer to /root/RoboLearn/Demonstrations/launch/run.sh
-
+### Start a demonstration task 
+1. refer to /root/RoboLearn/Demonstrations/launch/run.sh  
+`python collect_human_demonstrations.py --robots IIWA --environment Lift --device omega` 
 ## Train CIQL Agent
-`python train_iq_dyrank.py env=robosuite_Lift_IIWA env.demo=robosuite_Lift_IIWA_better_worse_failed_90.pkl agent=sac agent.actor_lr=5e-06 agent.critic_lr=5e-06 agent.init_temp=0.001 expert.demos=90 seed=1 train.boundary_angle=30 C_aware.conf_learn=IQ`
-refer to /root/RoboLearn/Confidence-based-IQ-Learn/run_confidence.sh
+1. refer to /root/RoboLearn/Confidence-based-IQ-Learn/run_confidence.sh  
+`python train_iq_dyrank.py env=robosuite_Lift_IIWA env.demo=robosuite_Lift_IIWA_better_worse_failed_90.pkl agent=sac agent.actor_lr=5e-06 agent.critic_lr=5e-06 agent.init_temp=0.001 expert.demos=90 seed=1 train.boundary_angle=30 C_aware.conf_learn=max_lamb`
 
 
 # Acknowledegement
