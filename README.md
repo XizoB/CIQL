@@ -8,6 +8,9 @@
 
 We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repository/docker/xizobu/galactic/general)
 # Result
+## Boundary Angle Evaluation
+## CIQL Evaluation
+## Demonstrations Evaluation
 
 # Run
 ## Collect demonstartions
@@ -24,7 +27,7 @@ Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/external/fd
 - Running the driver in one terminal  
 `ros2 launch fd_bringup fd.launch.py`  
 
-- Publish end position data in another terminal
+- Publish end position data in another terminal  
 `ros2 run tcp_socket ee_topic_sub`
 2. Start a demonstration task  
 refer to /root/RoboLearn/Demonstrations/launch/run.sh  
