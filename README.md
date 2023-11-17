@@ -18,8 +18,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 - Compile by using  
 `colcon build --cmake-args -DCMAKE_BUILD_TYPE=Release --symlink-install`  
 Note that using the local python environment rather than the conda
-- Initialize Omega.x by running `./HapticDesk` in terminal
-Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/external/fd_sdk/bin
+- Initialize Omega.x by running `./HapticDesk` in a terminal under the file path, Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/external/fd_sdk/bin
 
 - Open two terminals on ws_forcedimension files and source the workspace  
 `source install/setup.bash`  
