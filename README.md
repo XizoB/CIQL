@@ -6,6 +6,8 @@
 - robosuite-offline
 - stable-baselines3
 
+# Result
+
 # Run
 ## Collect demonstartions
 ### Activate Omgea.x device
@@ -24,11 +26,27 @@ Demonstrations/ws_forcedimension/src/forcedimension_ros2/fd_hardware/external/fd
 5. Publish end position data in another terminal
 `ros2 run tcp_socket ee_topic_sub`
 ### Start a demonstration task 
-1. refer to /root/RoboLearn/Demonstrations/launch/run.sh  
+refer to /root/RoboLearn/Demonstrations/launch/run.sh  
 `python collect_human_demonstrations.py --robots IIWA --environment Lift --device omega` 
-## Train CIQL Agent
-1. refer to /root/RoboLearn/Confidence-based-IQ-Learn/run_confidence.sh  
+
+### Merge demonstrations (demo = demo1 + demo2 ...)
+`python demonstration_merge.py --merge_directory collect_demonstration/Lift/IIWA_OSC_POSE`
+
+### Converted data （demo -> pkl）
+`python demonstration_transition.py --dataset_type robosuite_demo.hdf5 --output_dir iqlearn_demonstrations --dataset_path Lift/IIWA_OSC_POSE`
+
+
+## Train and Evalute Agent
+### Train CIQL Agent
+Refer to /root/RoboLearn/Confidence-based-IQ-Learn/run_confidence.sh  
+IQ-Learn(IQ), CIQL-A(max_lamb) and CIQL-E(conf_expert)  
 `python train_iq_dyrank.py env=robosuite_Lift_IIWA env.demo=robosuite_Lift_IIWA_better_worse_failed_90.pkl agent=sac agent.actor_lr=5e-06 agent.critic_lr=5e-06 agent.init_temp=0.001 expert.demos=90 seed=1 train.boundary_angle=30 C_aware.conf_learn=max_lamb`
+
+### Evalute CIQL Agent
+`python test_iq_dyrank.py env=robosuite_Lift_IIWA agent=sac env.has_renderer=False eval.policy=xxx`
+
+### Evalute Demonstrations using reward function recovered by CIQL
+`python test_iq_reward.py env=robosuite_Lift_IIWA env.demo=robosuite_Lift_IIWA_50.pkl expert.demos=50 agent=sac eval.policy=xxx`
 
 
 # Acknowledegement
