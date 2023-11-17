@@ -6,6 +6,7 @@
 - robosuite-offline
 - stable-baselines3
 
+We provide a docker image [xizobu/galactic:1.0](https://hub.docker.com/repository/docker/xizobu/galactic/general)
 # Result
 
 # Run
@@ -45,7 +46,7 @@ IQ-Learn(IQ), CIQL-A(max_lamb) and CIQL-E(conf_expert)
 6. Evalute CIQL Agent  
 `python test_iq_dyrank.py env=robosuite_Lift_IIWA agent=sac env.has_renderer=False eval.policy=xxx`
 
-7. Evalute Demonstrations using reward function recovered by CIQL
+7. Evalute Demonstrations using reward function recovered by CIQL  
 `python test_iq_reward.py env=robosuite_Lift_IIWA env.demo=robosuite_Lift_IIWA_50.pkl expert.demos=50 agent=sac eval.policy=xxx`
 
 
