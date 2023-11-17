@@ -6,7 +6,7 @@
 - robosuite-offline
 - stable-baselines3
 
-We provide a docker image [xizobu/galactic:1.0](https://hub.docker.com/repository/docker/xizobu/galactic/general)
+We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repository/docker/xizobu/galactic/general)
 # Result
 
 # Run
