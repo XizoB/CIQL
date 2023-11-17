@@ -69,23 +69,6 @@ def main(cfg: DictConfig):
             if done:
                 break
 
-            # # maybe dump video
-            # write_video = "/root/RoboLearn/Confidence-based-IQ-Learn/vis/IIWA_StackObstacle.mp4"
-            # video_skip = 5
-            # camera_names = ["frontview" "robot0_eye_in_hand" "robot0_robotview"]
-            # if write_video:
-            #     video_writer = imageio.get_writer(write_video, fps=20)
-            # # video render
-            # if write_video:
-            #     if video_count % video_skip == 0:
-            #         video_img = []
-            #         for cam_name in camera_names:
-            #             video_img.append(env.render())
-            #         video_img = np.concatenate(video_img, axis=1) # concatenate horizontally
-            #         video_writer.append_data(video_img)
-            #     video_count += 1
-            # if write_video:
-            #     video_writer.close()
         print('Ep {}\tHorizon:{} \tMoving average score: {:.2f}\t'.format(epoch, len(rewards), np.array(rewards).sum()))
     print("成功率:{}".format(len(succeed)/args.eval.eps))
 
