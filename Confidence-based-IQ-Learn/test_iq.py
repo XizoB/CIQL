@@ -9,6 +9,9 @@ from scipy.stats import spearmanr, pearsonr
 import matplotlib.pyplot as plt
 import seaborn as sns
 import wandb
+import imageio
+from robomimic.envs.env_base import EnvBase
+
 
 from make_envs import make_env
 from agent import make_agent
@@ -29,6 +32,9 @@ def main(cfg: DictConfig):
     env = make_env(args, monitor=False)                 # 初始化 env 环境
     agent = make_agent(env, args)                       # 初始化 agent 智能体
 
+    # assert isinstance(env, EnvBase)
+
+
     # 导入 agent 智能体网络
     policy_file = f'results/{args.method.type}.para'
     if args.eval.policy:
@@ -46,6 +52,7 @@ def main(cfg: DictConfig):
         rewards = []
         dones = []
         success = False
+        video_count = 0
         for step in range(args.env.horizon):
             env.render()
             action = agent.choose_action(state, sample=False)
@@ -54,15 +61,34 @@ def main(cfg: DictConfig):
             dones.append(done)
             
 
-            if reward==1 and not success:
+            if reward>=0.44 and not success:
                 success = True
                 succeed.append(1)
                 break
             state = next_state
             if done:
                 break
+
+            # # maybe dump video
+            # write_video = "/root/RoboLearn/Confidence-based-IQ-Learn/vis/IIWA_StackObstacle.mp4"
+            # video_skip = 5
+            # camera_names = ["frontview" "robot0_eye_in_hand" "robot0_robotview"]
+            # if write_video:
+            #     video_writer = imageio.get_writer(write_video, fps=20)
+            # # video render
+            # if write_video:
+            #     if video_count % video_skip == 0:
+            #         video_img = []
+            #         for cam_name in camera_names:
+            #             video_img.append(env.render())
+            #         video_img = np.concatenate(video_img, axis=1) # concatenate horizontally
+            #         video_writer.append_data(video_img)
+            #     video_count += 1
+            # if write_video:
+            #     video_writer.close()
         print('Ep {}\tHorizon:{} \tMoving average score: {:.2f}\t'.format(epoch, len(rewards), np.array(rewards).sum()))
     print("成功率:{}".format(len(succeed)/args.eval.eps))
+
 
 
     # #------------  评估智能体 --> 回报 更新步数 ------------#
@@ -70,7 +96,6 @@ def main(cfg: DictConfig):
     # print(f'Avg. eval returns: {np.mean(eval_returns)}, timesteps: {np.mean(eval_timesteps)}')
     # if args.eval_only:
     #     exit()
-
 
     # #------------  测量相关性 ------------#
     # measure_correlations(agent, env, args, log=True)

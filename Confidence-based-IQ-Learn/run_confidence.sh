@@ -154,9 +154,9 @@ python train_iq_dyrank.py env=robosuite_Lift_IIWA env.demo=Suboptimal/Lift/robos
 
 
 
-# render
+# ----------- render
 # max_lamb
-python test_iq.py eval.eps=100 env=robosuite_Lift_IIWA env.horizon=200 agent=sac env.has_renderer=True eval.policy=/root/Docker_RoboLearn/Outputs/outputs/better_worse_failed_90_angle/maxlamb_angle_30/results/431000_returns_94.217_succeed_0.9
+python test_iq.py eval.eps=100 env=robosuite_Lift_IIWA env.horizon=200 agent=sac env.has_renderer=True eval.policy=/root/Docker_RoboLearn/Outputs/outputs/better_worse_failed_60/maxlamb_angle_60/results/474000_returns_103.285_succeed_0.9
 # IQ
 python test_iq.py eval.eps=100 env=robosuite_Lift_IIWA env.horizon=200 agent=sac env.has_renderer=True eval.policy=/root/Docker_RoboLearn/Outputs/outputs/better_worse_failed_60/IQ/results/133000_returns_48.334_succeed_0.4
 # confexpert
@@ -164,11 +164,12 @@ python test_iq.py eval.eps=100 env=robosuite_Lift_IIWA env.horizon=200 agent=sac
 # 60 filter
 python test_iq.py eval.eps=100 env=robosuite_Lift_IIWA env.horizon=200 agent=sac env.has_renderer=True eval.policy=/root/Docker_RoboLearn/Outputs/outputs/better_worse_failed_60/angle_60_filter/results/295000_returns_57.004_succeed_0.8
 
-# 好模型
+
+# ----------- 好模型
 python test_iq_dyrank.py eval.eps=100 env=robosuite_Lift_IIWA env.horizon=500 agent=sac env.has_renderer=False eval.policy=/root/RoboLearn/Confidence-Aware-IQ-Learn/iq_learn/outputs/better_failed_30/11-46-58/results/496000_returns_25.384_succeed_0.5
 
 
-# irl reward
+# ----------- irl reward
 python test_iq_reward.py env=robosuite_Lift_IIWA env.demo=Suboptimal/Lift/robosuite_Lift_IIWA_50.pkl expert.demos=50 env.horizon=500 agent=sac env.has_renderer=False eval.policy=/root/RoboLearn/Confidence-Aware-IQ-Learn/iq_learn/outputs/2023-09-19/22-42-45/results/333000_returns_57.524_succeed_0.8
 
 
