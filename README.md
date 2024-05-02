@@ -13,14 +13,19 @@ Effect of Noise Angle.
 IQ-Learn: baseline algorithm;  
 IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°; 
 CIQL-E: Just filtering noise and using confidence;  
-CIQL-A: Penalizing noise and using confidence.
+CIQL-A: Penalizing noise and using confidence.  
+Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn. 
+Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
 ![image](https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png)
 ## CIQL Evaluation
-Reward function recovered by CIQL-A aligns more closely with human intent: This is attributed to the fact
-that CIQL-E primarily filters out noisy data, which doesnot contribute to learn the reward function. Conversely,CIQL-A’s reward function actively penalizes such noisy data,resulting in a reward mechanism that is more in tune with human objectives. 
+Recovering environment rewards. 
+Reward function recovered by CIQL-A aligns more closely with human intent.  
+Evaluation and penalization of noise in the data are more aligned with human intentions compared to strategies trained with simple noise filtering.
 ![image](https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png)
 ## Demonstrations Evaluation
-Noise filtering visualization of two human datasets, better and worse: this shows a visualization of the human datasets after filtering the noise, where the processing of the initial cluttered trajectories leaves well-organized fragments of trajectories pointing towards the target. Note that the confidence function w relies on transition information and does not require other inputs such as ground truth rewards or active human supervision.
+Noise filtering visualization of two human datasets, better and worse.  
+After filtering out the cluttered trajectories, an organized trend emerges.  
+Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from humans, a true reward function from the environment, or strict assumptions about noise.
 ![image](https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png)
 # Run
 ## Collect demonstartions
