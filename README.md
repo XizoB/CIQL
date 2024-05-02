@@ -8,7 +8,7 @@
 
 We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repository/docker/xizobu/galactic/general)
 # Result
-## Boundary Angle Evaluation
+## Different Noise Angles and Datasets
 Effect of Noise Angle. 
 IQ-Learn: baseline algorithm; 
 IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°. 
