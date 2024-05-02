@@ -11,7 +11,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 ## Different Noise Angles and Datasets
 Effect of Noise Angle.  
 IQ-Learn: baseline algorithm;  
-IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°.  
+IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°; 
 CIQL-E: Just filtering noise and using confidence;  
 CIQL-A: Penalizing noise and using confidence.
 ![image](https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png)
