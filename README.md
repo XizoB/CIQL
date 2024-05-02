@@ -30,7 +30,9 @@ Evaluation and penalization of noise in the data are more aligned with human int
 Noise filtering visualization of two human datasets, better and worse.  
 After filtering out the cluttered trajectories, an organized trend emerges.  
 Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from humans, a true reward function from the environment, or strict assumptions about noise.
-![image](https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png)
+
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="800" height="450">
+
 # Run
 ## Collect demonstartions
 1. Activate Omgea.x device
