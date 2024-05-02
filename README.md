@@ -31,7 +31,7 @@ Noise filtering visualization of two human datasets, better and worse.
 After filtering out the cluttered trajectories, an organized trend emerges.  
 Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from humans, a true reward function from the environment, or strict assumptions about noise.
 
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="600" height="335">
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="750" height="400">
 
 # Run
 ## Collect demonstartions
