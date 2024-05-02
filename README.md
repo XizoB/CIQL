@@ -11,6 +11,9 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 ## Boundary Angle Evaluation
 ## CIQL Evaluation
 ## Demonstrations Evaluation
+This shows a visualization of the human datasets after filtering the noise, where the processing of the initial cluttered trajectories leaves well-organized fragments of trajectories pointing towards the target. Note that the confidence function w relies on transition information and does not require other inputs such as ground truth rewards or active human supervision.
+
+![image](https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png)
 
 # Run
 ## Collect demonstartions
