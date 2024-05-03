@@ -15,7 +15,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 &nbsp;&nbsp;CIQL-E: Just filtering noise and using confidence;  
 &nbsp;&nbsp;CIQL-A: Penalizing noise and using confidence.  
 &nbsp;&nbsp;Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn. 
-&nbsp;&nbsp;Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
+&nbsp;&nbsp;Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively &nbsp;&nbsp;enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
 
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png" width="600" height="335">
@@ -23,18 +23,18 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 
 ## CIQL Evaluation
 - Recovering environment rewards.  
-Reward function recovered by CIQL-A aligns more closely with human intent.  
-Evaluation and penalization of noise in the data are more aligned with human intentions compared to strategies trained with simple noise filtering.
+&nbsp;&nbsp;Reward function recovered by CIQL-A aligns more closely with human intent.  
+&nbsp;&nbsp;Evaluation and penalization of noise in the data are more aligned with human intentions compared to strategies trained with simple &nbsp;&nbsp;noise filtering.
 
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
 </div>
 
 - Performance of CIQLs and IQ-Learns  
-IQ-Learn: success rate of the task is very low;  
-IQ-Learn(filter): there are multiple cases where the robotic arm flies directly in a messy manner;  
-CIQL-Expert: the decision time is long and the grasping is not decisive enough;   
-CIQL-Agent: the decision time is short and the grasping is decisive.
+&nbsp;&nbsp;IQ-Learn: success rate of the task is very low;  
+&nbsp;&nbsp;IQ-Learn(filter): there are multiple cases where the robotic arm flies directly in a messy manner;  
+&nbsp;&nbsp;CIQL-Expert: the decision time is long and the grasping is not decisive enough;   
+&nbsp;&nbsp;CIQL-Agent: the decision time is short and the grasping is decisive.
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn(filter)%20.gif" width="350" height="300">
   
@@ -48,8 +48,8 @@ CIQL-Agent: the decision time is short and the grasping is decisive.
 
 ## Demonstrations Evaluation
 - Noise filtering visualization of two human datasets, better and worse.  
-After filtering out the cluttered trajectories, an organized trend emerges.  
-Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from humans, a true reward function from the environment, or strict assumptions about noise.
+&nbsp;&nbsp;After filtering out the cluttered trajectories, an organized trend emerges.  
+&nbsp;&nbsp;Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from &nbsp;&nbsp;humans, a true reward function from the environment, or strict assumptions about noise.
 
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="750" height="400">
