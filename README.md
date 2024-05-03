@@ -14,8 +14,8 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 &nbsp;&nbsp;IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°;  
 &nbsp;&nbsp;CIQL-E: Just filtering noise and using confidence;  
 &nbsp;&nbsp;CIQL-A: Penalizing noise and using confidence.  
-&nbsp;&nbsp;Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn. 
-&nbsp;&nbsp;&nbsp;Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively &nbsp;&nbsp;&nbsp;enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
+&nbsp;&nbsp;Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn.
+&nbsp;&nbsp;Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively &nbsp;&nbsp;enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
 
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png" width="600" height="335">
