@@ -17,9 +17,9 @@ CIQL-A: Penalizing noise and using confidence.
 Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn. 
 Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
 
-<div align=center>
+<div align=center
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png" width="600" height="335">
-<div>
+div>
 
 
 ## CIQL Evaluation
