@@ -9,20 +9,20 @@
 We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repository/docker/xizobu/galactic/general)
 # Result
 ## Different Noise Angles and Datasets
-Effect of Noise Angle.  
-IQ-Learn: baseline algorithm;  
-IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°;  
-CIQL-E: Just filtering noise and using confidence;  
-CIQL-A: Penalizing noise and using confidence.  
-Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn. 
-Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
+-Effect of Noise Angle.  
+&nbsp;&nbsp;IQ-Learn: baseline algorithm;  
+&nbsp;&nbsp;IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°;  
+&nbsp;&nbsp;CIQL-E: Just filtering noise and using confidence;  
+&nbsp;&nbsp;CIQL-A: Penalizing noise and using confidence.  
+&nbsp;&nbsp;Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn. 
+&nbsp;&nbsp;Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
 
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png" width="600" height="335">
 </div>
 
 ## CIQL Evaluation
-Recovering environment rewards.  
+-Recovering environment rewards.  
 Reward function recovered by CIQL-A aligns more closely with human intent.  
 Evaluation and penalization of noise in the data are more aligned with human intentions compared to strategies trained with simple noise filtering.
 
@@ -30,7 +30,7 @@ Evaluation and penalization of noise in the data are more aligned with human int
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
 </div>
 
-Performance of CIQLs and IQ-Learns  
+-Performance of CIQLs and IQ-Learns  
 IQ-Learn: success rate of the task is very low;  
 IQ-Learn(filter): there are multiple cases where the robotic arm flies directly in a messy manner;  
 CIQL-Expert: the decision time is long and the grasping is not decisive enough;   
@@ -47,7 +47,7 @@ CIQL-Agent: the decision time is short and the grasping is decisive.
 </div>
 
 ## Demonstrations Evaluation
-Noise filtering visualization of two human datasets, better and worse.  
+-Noise filtering visualization of two human datasets, better and worse.  
 After filtering out the cluttered trajectories, an organized trend emerges.  
 Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from humans, a true reward function from the environment, or strict assumptions about noise.
 
