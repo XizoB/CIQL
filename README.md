@@ -21,7 +21,6 @@ Compared to simply filtering noise, implementing fine-grained confidence assessm
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png" width="600" height="335">
 </div>
 
-
 ## CIQL Evaluation
 Recovering environment rewards.  
 Reward function recovered by CIQL-A aligns more closely with human intent.  
@@ -29,17 +28,13 @@ Evaluation and penalization of noise in the data are more aligned with human int
 
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
-<div>
+</div>
   
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn(filter)%20.gif" width="350" height="300">
   
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Expert.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Agent.gif" width="350" height="300">
-<div>
-
-
-
-
+</div>
 
 ## Demonstrations Evaluation
 Noise filtering visualization of two human datasets, better and worse.  
@@ -48,8 +43,7 @@ Fine-grained confidence scores can be provided for human demonstration data with
 
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="750" height="400">
-<div>
-
+</div>
 
 # Run
 ## Collect demonstartions
