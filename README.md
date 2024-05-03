@@ -15,6 +15,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 &nbsp;&nbsp;CIQL-E: Just filtering noise and using confidence;  
 &nbsp;&nbsp;CIQL-A: Penalizing noise and using confidence.  
 &nbsp;&nbsp;Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn.
+
 &nbsp;&nbsp;Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively &nbsp;&nbsp;enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
 
 <div align=center>
