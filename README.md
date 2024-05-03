@@ -9,7 +9,7 @@
 We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repository/docker/xizobu/galactic/general)
 # Result
 ## Different Noise Angles and Datasets
-- Effect of Noise Angle.  
+- **Effect of Noise Angle**
 &nbsp;&nbsp;IQ-Learn: baseline algorithm;  
 &nbsp;&nbsp;IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°;  
 &nbsp;&nbsp;CIQL-E: Just filtering noise and using confidence;  
@@ -22,7 +22,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 </div>
 
 ## CIQL Evaluation
-- Recovering environment rewards.  
+- **Recovering environment rewards**  
 &nbsp;&nbsp;Reward function recovered by CIQL-A aligns more closely with human intent.  
 &nbsp;&nbsp;Evaluation and penalization of noise in the data are more aligned with human intentions compared to strategies trained with simple &nbsp;&nbsp;noise filtering.
 
@@ -30,7 +30,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
 </div>
 
-- Performance of CIQLs and IQ-Learns  
+- **Performance of CIQLs and IQ-Learns**  
 &nbsp;&nbsp;IQ-Learn: success rate of the task is very low;  
 &nbsp;&nbsp;IQ-Learn(filter): there are multiple cases where the robotic arm flies directly in a messy manner;  
 &nbsp;&nbsp;CIQL-Expert: the decision time is long and the grasping is not decisive enough;   
@@ -47,7 +47,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 </div>
 
 ## Demonstrations Evaluation
-- Noise filtering visualization of two human datasets, better and worse.  
+- **Noise filtering visualization of two human datasets, better and worse** 
 &nbsp;&nbsp;After filtering out the cluttered trajectories, an organized trend emerges.  
 &nbsp;&nbsp;Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from &nbsp;&nbsp;humans, a true reward function from the environment, or strict assumptions about noise.
 
