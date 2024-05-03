@@ -26,7 +26,7 @@ Evaluation and penalization of noise in the data are more aligned with human int
 
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
 
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="400" height="250">
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="400" height="250"><img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn(filter)%20.gif" width="400" height="250">
 
 
 
