@@ -52,7 +52,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 &nbsp;&nbsp;Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from &nbsp;&nbsp;humans, a true reward function from the environment, or strict assumptions about noise.
 
 <div align=center>
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="750" height="400">
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="750" height="500">
 </div>
 
 # Run
