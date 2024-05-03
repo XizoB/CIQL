@@ -30,9 +30,10 @@ Evaluation and penalization of noise in the data are more aligned with human int
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
 </div>
 
-Performance of CIQLs and IQ-Learns
+Performance of CIQLs and IQ-Learns  
 IQ-Learn: success rate of the task is very low;  
 IQ-Learn(filter): there are multiple cases where the robotic arm flies directly in a messy manner;  
+CIQL-Expert: the decision time is long and the grasping is not decisive enough;   
 CIQL-Agent: the decision time is short and the grasping is decisive.
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn(filter)%20.gif" width="350" height="300">
