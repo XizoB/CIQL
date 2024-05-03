@@ -47,7 +47,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 </div>
 
 ## Demonstrations Evaluation
-- **Noise filtering visualization of two human datasets, better and worse**
+- **Noise filtering visualization of two human datasets, better and worse**  
 &nbsp;&nbsp;After filtering out the cluttered trajectories, an organized trend emerges.  
 &nbsp;&nbsp;Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from &nbsp;&nbsp;humans, a true reward function from the environment, or strict assumptions about noise.
 
