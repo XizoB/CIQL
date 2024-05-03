@@ -33,6 +33,7 @@ Evaluation and penalization of noise in the data are more aligned with human int
 Performance of CIQLs and IQ-Learns
 <div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn(filter)%20.gif" width="350" height="300">
+  
 (a)Performance of IQ-Learn  (b)Performance of IQ-Learn(filter) 
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Expert.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Agent.gif" width="350" height="300">
 </div>
