@@ -17,19 +17,24 @@ CIQL-A: Penalizing noise and using confidence.
 Ranking of algorithm performance: CIQL-A (40.3%) > CIQL-E (30.1%) > CIQL (filter, 26.8%) > IQ-Learn. 
 Compared to simply filtering noise, implementing fine-grained confidence assessment on the demonstration data can effectively enhance the performance of the algorithm. Additionally, penalizing noise is also superior to straightforward noise filtering.
 
+<div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Boundary%20Angle%20Evaluation.png" width="600" height="335">
+<div>
+
 
 ## CIQL Evaluation
 Recovering environment rewards.  
 Reward function recovered by CIQL-A aligns more closely with human intent.  
 Evaluation and penalization of noise in the data are more aligned with human intentions compared to strategies trained with simple noise filtering.
 
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
-
 <div align=center>
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="350" height="250"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn(filter)%20.gif" width="350" height="250">
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
+<div>
   
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Expert.gif" width="350" height="250"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Agent.gif" width="350" height="250">
+<div align=center>
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn%20.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/IQ-Learn(filter)%20.gif" width="350" height="300">
+  
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Expert.gif" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-Agent.gif" width="350" height="300">
 <div>
 
 
@@ -41,7 +46,10 @@ Noise filtering visualization of two human datasets, better and worse.
 After filtering out the cluttered trajectories, an organized trend emerges.  
 Fine-grained confidence scores can be provided for human demonstration data without the need for active supervision signals from humans, a true reward function from the environment, or strict assumptions about noise.
 
+<div align=center>
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="750" height="400">
+<div>
+
 
 # Run
 ## Collect demonstartions
