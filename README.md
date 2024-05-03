@@ -10,7 +10,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 # Result
 ## Different Noise Angles and Datasets
 - Effect of Noise Angle.  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IQ-Learn: baseline algorithm;  
+&nbsp;&nbspIQ-Learn: baseline algorithm;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IQ-Learn (filter): Just filtering noise without using confidence, it becomes IQ-Learn when θn is set to 180°;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIQL-E: Just filtering noise and using confidence;  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CIQL-A: Penalizing noise and using confidence.  
