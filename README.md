@@ -27,7 +27,9 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 &nbsp;&nbsp;Evaluation and penalization of noise in the data are more aligned with human intentions compared to strategies trained with simple &nbsp;&nbsp;noise filtering.
 
 <div align=center>
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL%20Evaluation.png" width="800" height="250">
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-A%E2%80%99s%20recovered%20reward.png" width="350" height="300"> <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/CIQL-E%E2%80%99s%20recovered%20reward.png" width="350" height="300">
+  
+**(a) CIQL-A’s recovered reward** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **(b) CIQL-E’s recovered reward**
 </div>
 
 - **Performance of CIQLs and IQ-Learns**  
