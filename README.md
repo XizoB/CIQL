@@ -57,6 +57,11 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 <img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Demonstrations%20Evaluation.png" width="750" height="500">
 </div>
 
+## Multi-task Testing
+<div align=center>
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Grasping%20Success%20Rate%20in%20Block%20Stacking.png" width="750" height="500">
+</div>
+
 # Run
 ## Collect demonstartions
 1. Activate Omgea.x device
