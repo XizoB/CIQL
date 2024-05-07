@@ -61,7 +61,7 @@ We provide a docker image [xizobu/galactic:3.0](https://hub.docker.com/repositor
 Thouge applied only in the linear grasping task , our method  greatly enhance the success rate of the grasping task in multi-tasks,thereby improving the success rate of the entire task.
 
 <div align=center>
-<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Grasping%20Success%20Rate%20in%20Block%20Stacking.png" width="750" height="500">
+<img src="https://github.com/XizoB/CIQL/blob/main/Confidence-based-IQ-Learn/results/Grasping%20Success%20Rate%20in%20Block%20Stacking.png" width="750" height="400">
 </div>
 
 # Run
